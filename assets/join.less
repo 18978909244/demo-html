@@ -1,0 +1,176 @@
+@greeColor:#03a96d;
+@fontColor:#444444;
+@fontSize:0.6rem;
+@gray:#f8f8f8;
+@fontLight:#888888;
+@button:#f8f8f6;
+@buttoned:#f0fffa;
+
+body{
+    padding: 0;
+    margin: 0;
+    .container{
+        color:@fontColor;
+        font-size: @fontSize;
+        .header{
+            padding: @fontSize/2;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &_left{
+                flex:1;
+            }
+            &_right{
+                flex:9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &_icon{
+                    width: @fontSize;
+                    height: @fontSize;
+                    margin-left: @fontSize/2;
+                }
+            }
+        }
+        .body{
+            padding-bottom: @fontSize*3;
+            background: @gray;
+            // padding: @fontSize/2;
+            font-size: @fontSize/1.2;
+            &_top{
+                padding: @fontSize/2;
+                font-weight: bold;
+                &_title{
+                    font-size: @fontSize;
+                    &_desc{
+                        font-size: @fontSize/1.4;
+
+                    }
+                }
+                &_list{
+                    padding: @fontSize/2;
+                    &_item{
+                        background:url('../assets/yes.png') no-repeat;
+                        background-size: @fontSize @fontSize;
+                        margin: @fontSize/2;
+                        &_main{
+                            font-size: @fontSize*0.9;
+                            font-weight: bold;
+                            padding-left: @fontSize*1.2;
+                        }
+                        &_desc{
+                            font-weight: normal;
+                            padding-left: @fontSize*1.2;
+                            color: @fontLight;
+                        }
+                    }
+                }
+            }
+            &_middle{
+                background: #fff;
+                padding: @fontSize/2;
+                font-weight: bold;
+                &_title{
+                    font-size: @fontSize;
+                    &_desc{
+                        font-size: @fontSize/1.4;
+                    }
+                }
+                &_list{
+                    padding: @fontSize/2;
+                    &_item{
+                        margin: @fontSize/2;
+                        &_main{
+                            font-size: @fontSize*0.9;
+                            font-weight: bold;
+                            &_icon{
+                                color:red;
+                                margin-right: @fontSize/2;
+                            }
+                        }
+                        &_desc{
+                            font-weight: normal;
+                            color: @fontLight;
+                            padding-left: @fontSize/2;
+                        }
+                        &_choice{
+                            display: flex;
+                            justify-content: space-around;
+                            margin-top: @fontSize;
+                            &_button{
+                                &:hover{
+                                    border: 2px solid @greeColor;
+                                    outline: none;
+                                    position: relative;
+                                    overflow: hidden;
+
+                                    &::after{
+                                        content:"";
+                                        position: absolute;
+                                        bottom: -@fontSize*2.3;
+                                        right: -@fontSize*3;
+                                        background: @greeColor;
+                                        color:#fff;
+                                        transform:rotate(50deg);
+                                        overflow: hidden;
+                                        width: @fontSize*3;
+                                        height: @fontSize*6;
+                                    }
+                                    &::before{
+                                        content:"✓";
+                                        font-size: @fontSize/2.5;
+                                        position: absolute;
+                                        color:#fff;
+                                        right: 0;
+                                        width: @fontSize;
+                                        height: @fontSize;
+                                        bottom: -@fontSize/5;
+                                        right: -@fontSize/5;
+                                        z-index: 99;
+                                    }
+                                }
+                                width: @fontSize*5;
+                                height: @fontSize*2;
+                                background:@button;
+                                border-radius: @fontSize/5 @fontSize/5 @fontSize/5 @fontSize/5;
+                            }
+                        }
+                    }
+                }
+            }
+            &_bottom{
+                padding: @fontSize/2;
+                font-weight: bold;
+                &_title{
+                    font-size: @fontSize;
+                    &_desc{
+                        font-size: @fontSize/1.4;
+                    }
+                }
+                &_list{
+                    &_item{
+                        margin: @fontSize/2;
+                    }
+                }
+            }
+        }
+        .bottom{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            &_save{
+                color: #fff;
+                background: @greeColor;
+                width:90%;
+                height: 50%;
+                margin: 0 auto;
+                font-size: @fontSize*1.5;
+                padding-top: @fontSize/2;
+                padding-bottom: @fontSize/2;
+                margin-bottom: @fontSize/2;
+                border-radius: @fontSize/2 @fontSize/2 @fontSize/2 @fontSize/2;
+            }
+        }
+    }
+}

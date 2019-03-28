@@ -1,0 +1,142 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f8f8f6;
+}
+body .container {
+  color: #444444;
+  font-size: 0.6rem;
+}
+body .container .header {
+  background: #03a96d;
+  color: #fff;
+  padding: 0.3rem;
+  display: flex;
+}
+body .container .header_left {
+  flex: 1;
+}
+body .container .header_right {
+  flex: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .body {
+  padding-bottom: 3rem;
+  color: #fff;
+  font-size: 0.5rem;
+}
+body .container .body_top {
+  background: #03a96d;
+  padding: 0.3rem;
+}
+body .container .body_top_title {
+  font-size: 0.48rem;
+}
+body .container .body_top_list {
+  padding: 0.2rem;
+}
+body .container .body_top_list_item {
+  margin-bottom: 0.3rem;
+  font-weight: normal;
+  font-size: 0.48rem;
+}
+body .container .body_middle {
+  background: #fff;
+  color: #444444;
+  padding: 0.3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 0.6rem;
+}
+body .container .body_middle_title {
+  text-align: left;
+}
+body .container .body_middle_price {
+  text-align: center;
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.2rem;
+}
+body .container .body_middle_tip {
+  text-align: center;
+}
+body .container .body_middle_tip_price {
+  color: burlywood;
+}
+body .container .body_bottom {
+  margin-top: 3rem;
+  background: #fff;
+  color: #444444;
+  padding: 0.3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -0.6rem;
+}
+body .container .body_bottom_title {
+  text-align: left;
+}
+body .container .body_bottom_input {
+  margin-top: 0.6rem;
+  padding: 0.06rem;
+  background: #f8f8f6;
+  border: none;
+  outline: none;
+  height: 1.8rem;
+}
+body .container .body_more {
+  color: #444444;
+}
+body .container .body_more_line {
+  width: 100%;
+  height: 2px;
+  border-top: 2px dashed #888888;
+}
+body .container .body_more_title {
+  text-align: center;
+}
+body .container .body_more_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+body .container .body_more_list_item {
+  width: 33%;
+  text-align: center;
+  font-size: 0.48rem;
+  margin-top: 0.48rem;
+  font-weight: bold;
+}
+body .container .body_more_tip {
+  text-align: center;
+  color: #03a96d;
+}
+body .container .body_more_tip_icon {
+  width: 0.48rem;
+  height: 0.48rem;
+}
+body .container .bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+body .container .bottom_save {
+  color: #fff;
+  background: #03a96d;
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
