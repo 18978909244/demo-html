@@ -1,6 +1,6 @@
 @greeColor:#03a96d;
 @fontColor:#444444;
-@fontSize:0.6rem;
+@fontSize:1rem;
 @gray:#f8f8f8;
 @fontLight:#888888;
 @button:#f8f8f6;
@@ -52,12 +52,13 @@ body{
             &_middle{
                 background: #fff;
                 color: @fontColor;
-                padding: @fontSize/2;
+                padding: @fontSize @fontSize/2;
                 font-weight: bold;
                 display: flex;
                 flex-direction: column;
-                width: 90%;
+                width: 95%;
                 margin: 0 auto;
+                margin-top: -@fontSize;
                 margin-bottom: @fontSize;
                 &_title{
                     text-align: left;
@@ -79,13 +80,13 @@ body{
                 margin-top: @fontSize*5;
                 background: #fff;
                 color: @fontColor;
-                padding: @fontSize/2;
+                padding: @fontSize @fontSize/2;
                 font-weight: bold;
                 display: flex;
                 flex-direction: column;
-                width: 90%;
+                width: 95%;
                 margin: 0 auto;
-                margin-top: -@fontSize;
+                margin-bottom: @fontSize*2;
                 &_title{
                     text-align: left;
                 }
@@ -95,33 +96,58 @@ body{
                     background: @button;
                     border:none;
                     outline:none;
-                    height: @fontSize*3;
+                    font-size: @fontSize;
+                    height: @fontSize*5;
                 }
             }
             &_more{
                 color: @fontColor;
+                position: relative;
                 &_line{
-                    width: 100%;
-                    height: 2px;
+                    width: 95%;
+                    left:2.5%;
+                    height: @fontSize;
                     border-top: 2px dashed @fontLight;
+                    position: absolute;
+                    top: @fontSize/2;
+                    z-index: -1;
                 }
                 &_title{
                     text-align: center;
+                    font-size: @fontSize;
+                    background: #fff;
+                    width: 30%;
+                    margin: 0 auto;
+                    background: @button;
+                    margin-bottom: @fontSize;
                 }
                 &_list{
                     display: flex;
                     flex-wrap: wrap;
+                    width: 95%;
+                    margin: 0 auto;
                     &_item{
-                        width: 33%;
+                        width: 33.3%;
                         text-align: center;
-                        font-size: @fontSize*0.8;
-                        margin-top:  @fontSize*0.8;
-                        font-weight: bold;
+                        &_button{
+                            width: 95%;
+                            margin: 0 auto;
+                            text-align: center;
+                            font-size: @fontSize*0.7;
+                            padding: @fontSize*0.5 0;
+                            margin-top:  @fontSize*0.8;
+                            font-weight: bold;
+                            background: #fff;
+                        }
+                        
                     }
                     margin-bottom: @fontSize;
                 }
                 &_tip{
-                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: @fontSize*2;
                     &_icon{
                         width: @fontSize*0.8;
                         height: @fontSize*0.8;
@@ -141,7 +167,7 @@ body{
                 width:90%;
                 height: 50%;
                 margin: 0 auto;
-                font-size: @fontSize*1.5;
+                font-size: @fontSize;
                 padding-top: @fontSize/2;
                 padding-bottom: @fontSize/2;
                 margin-bottom: @fontSize/2;
